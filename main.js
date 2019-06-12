@@ -515,7 +515,7 @@ function main() {
                                 saveValue = true;
                                 if (!result[i].ack && result[i].subType === 'I_VERSION') {
                                     // send response: internal, ack=1
-                                    mySensorsInterface.write(result[i].id + ';' + result[i].childId + ';3;1;2;' + (adapter.version || 0), ip);
+                                    //mySensorsInterface.write(result[i].id + ';' + result[i].childId + ';3;1;2;' + (adapter.version || 0), ip);
                                 }
                                 break;
 
